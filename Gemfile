@@ -11,4 +11,6 @@ gem 'good_job', '>= 1.4'
 
 group :development, :test do
   gem 'puma', '5.1'
+  gem 'byebug'
+  gem 'pry'
 end
