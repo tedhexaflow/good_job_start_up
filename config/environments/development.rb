@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.configure do
-  # config.active_job.queue_adapter = GoodJob::Adapter.new(execution_mode: :async, max_threads: 5, poll_interval: 30)
+  config.good_job = { execution_mode: :async, max_threads: 5, poll_interval: 30 }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on

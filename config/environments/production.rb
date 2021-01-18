@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 Rails.application.configure do
-  config.active_job.queue_adapter = GoodJob::Adapter.new(execution_mode: :async, max_threads: 5, poll_interval: 30)
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -63,6 +62,7 @@ Rails.application.configure do
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "BEE_production"
+  config.good_job = { execution_mode: :async, max_threads: 5, poll_interval: 30 }
 
   config.action_mailer.perform_caching = false
 

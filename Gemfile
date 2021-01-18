@@ -7,7 +7,7 @@ gem 'pg', platforms: :mri
 
 gem 'rails', '>= 6.1'
 
-gem 'good_job', '>= 1.4'
+gem 'good_job', '>= 1.5'
 
 group :development, :test do
   gem 'puma', '5.1'
